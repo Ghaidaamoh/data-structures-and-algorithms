@@ -1,0 +1,25 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghaidaamoh/data-structures-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ghaidaamoh/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/Ghaidaamoh/data-structures-and-algorithms#readme",
+  "dependencies": {
+    "dots-config": "^2.1.0",
+    "express": "^4.17.1",
+    "jest": "^27.0.6"
+  }
+}
