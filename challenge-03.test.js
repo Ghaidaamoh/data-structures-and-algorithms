@@ -21,7 +21,7 @@ let binaryEle = (arr, num) => {
             upperEle = middleEle - 1
         }
     }
-    // console.log(result)
+  
     return (result)
 }
 // binaryEle([4, 8, 15, 16, 23, 42], 15)
