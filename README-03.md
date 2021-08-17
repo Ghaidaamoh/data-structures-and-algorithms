@@ -5,6 +5,7 @@ it's a new way to make our challenge and i like it because we know how the test 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![image](assets/Capture3.PNG)
+![image](assets/Capture4.PNG)
 # proplem domain:
 
 Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the value of the search key, or -1 if the element is not in the array.
