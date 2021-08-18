@@ -5,7 +5,7 @@ it's a new way to make our challenge and i like it because we know how the test 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![image](assets/Capture5.PNG)
-![image](assets/Capture4.PNG)
+![image](assets/Capture6.PNG)
 # proplem domain:
 
 write a function to add up the sum of each row in a matrix of arbitrary size, and return an array with the appropriate values.
