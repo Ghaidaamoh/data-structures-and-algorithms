@@ -17,3 +17,5 @@ describe('Testing node', () => {
         expect( testHead.next.val).toStrictEqual(30);
     });
 });
+
+module.exports=Node;

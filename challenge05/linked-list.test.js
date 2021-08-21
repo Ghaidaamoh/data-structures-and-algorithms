@@ -1,5 +1,5 @@
 'use strict';
-const node=require('./node-05.test')
+const Node=require('./node-05.test')
 class Linked_List{
     constructor(){
         this.head=null
@@ -17,17 +17,20 @@ class Linked_List{
     }
     includesMethod(value) {
         let current = this.head
-        while (current !== undefined) {
-            if (current.val == value)
+        while (current !== null) {
+            if (current.val === value){
                 return true
+            }
+            current = current.next
         }
         return false
     }
     toStringMethod(){
         let current = this.head
         let result = ''
-        while(current !== undefined){
-            result = result + `{ ${current.value} } -> `
+        while(current !== null){
+            result = result + `{ ${current.val} } -> `
+            current = current.next
         }
         result = result + 'NULL'
         return result
@@ -35,16 +38,17 @@ class Linked_List{
 }
 
 describe('Testing Linked List ', () => {
-    test('It should check the type of of the Node and its value', () => {
+    test('It should check the Lined List with my values :', () => {
         let Node1 = new Node('a')
         let Node2 = new Node('b')
         let Node3 = new Node('c')
-        let list = new List()
+        let list = new Linked_List()
         list.addMethod(Node1)
         list.addMethod(Node2)
         list.addMethod(Node3)
         expect(list.head).toStrictEqual(Node1);
-        expect(list.toStringMethod()).toBe('');
-   
+         expect(list.toStringMethod()).toStrictEqual('{ a } -> { b } -> { c } -> NULL');
+        expect(list.includesMethod('c')).toStrictEqual(true);
+        expect(list.includesMethod('f')).toStrictEqual(false);
     });
 });
