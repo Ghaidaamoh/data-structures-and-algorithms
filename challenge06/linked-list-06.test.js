@@ -4,7 +4,28 @@ class Linked_List {
     constructor() {
         this.head = null
     }
+    addMethod(node) {
+        if (this.head == null) {
+            this.head = node
+            return
+        }
+        let current = this.head
+        while (current.next !== null) {
+            current = current.next
+        }
+        current.next = node
+    }
    
+    toStringMethod() {
+        let current = this.head
+        let result = ''
+        while (current !== null) {
+            result = result + `{ ${current.val} } -> `
+            current = current.next
+        }
+        result = result + 'NULL'
+        return result
+    }
     append(val) {
         let node = new Node(val)
 
@@ -52,6 +73,7 @@ class Linked_List {
 }
 
 describe('Testing Linked List ', () => {
+    
     test('Code 06', () => {
         let Node1 = new Node('a')
         let Node2 = new Node('b')
