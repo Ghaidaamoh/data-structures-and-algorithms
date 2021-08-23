@@ -1,11 +1,13 @@
 
 'use strict';
 class Node {
-    constructor(val){
-this.val=val,
-this.next=null
+    constructor(value){
+        this.value = value,
+        this.next = null,
+        this.previous = null
     }
 }
+
 
 describe('Testing node', () => {
     test(' return the next node ', () => {
@@ -14,7 +16,7 @@ describe('Testing node', () => {
         const testHead= new Node (10,testNext)
         testHead.next=testNext
         expect(typeof testHead.next).toStrictEqual('object');
-        expect( testHead.next.val).toStrictEqual(30);
+        expect( testHead.next.value).toStrictEqual(30);
     });
 });
 
