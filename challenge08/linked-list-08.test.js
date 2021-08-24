@@ -54,17 +54,7 @@ class LinkedList {
       
         return zippList;
       }
-      let list = new LinkedList();
       
-      list.append("Alaa");
-      list.append("Ghaidaa");
-      list.append("Reem");
-      
-      let myList2 = new LinkedList();
-      
-      myList2.append("Alaa2");
-      myList2.append("Ghaidaa2");
-      myList2.append("Reem2");
       
 
       describe("LinkedList", () => {
