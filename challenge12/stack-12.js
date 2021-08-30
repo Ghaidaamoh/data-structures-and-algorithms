@@ -1,15 +1,15 @@
 'use strict';
-const Node = require('./node-11')
+
 class Stack {
     constructor() {
         this.top = null
     }
-    push(val) {
+    push(animal) {
       
-        let node = new Node(val)
+        let node = animal
         if(this.top==null){
             this.top=node
-            return(`${this.top.value} NULL`)
+            return(`${this.top.name} NULL`)
         }
         node.next=this.top
         this.top=node
@@ -17,7 +17,7 @@ class Stack {
         let current = this.top
         let result = ''
         while (current !== null) {
-            result = result + `${current.value} `
+            result = result + `${current.name} `
             current = current.next
         }
         result = result + 'NULL'
@@ -32,7 +32,7 @@ class Stack {
         let current = this.top
         let previous = current
         if (current.next == null) {
-            let eleValue = current.value
+            let eleValue = current.name
             this.top = null
             return (eleValue)
         }
@@ -40,7 +40,7 @@ class Stack {
             previous = current
             current = current.next
         }
-        let eleValue = current.value
+        let eleValue = current.name
         previous.next = null
         return (eleValue)
     }
