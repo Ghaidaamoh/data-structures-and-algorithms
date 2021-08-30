@@ -1,10 +1,9 @@
 # data-structures-and-algorithms-401
-# Code Challenge 10
+# Code Challenge 11
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![image](assets/Untitled.png)
-![image](assets/Capture222.PNG)
+![image](assets/Capture123.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
