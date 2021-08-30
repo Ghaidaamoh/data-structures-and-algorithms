@@ -14,10 +14,10 @@ class Stack {
         node.next=this.top
         this.top=node
 
-        let current = this.head
+        let current = this.top
         let result = ''
         while (current !== null) {
-            result = result + `{ ${current.value} } `
+            result = result + `${current.value} `
             current = current.next
         }
         result = result + 'NULL'
@@ -26,13 +26,23 @@ class Stack {
    
     pop() {
        
-     let curr=this.top
-     while (curr.next !=null) {
-        curr=curr.next 
-     }
-      let val =curr.value
-      curr=null
-      return(val)
+        if (this.top == null || this.top == undefined) {
+            return ('Empty')
+        }
+        let current = this.top
+        let previous = current
+        if (current.next == null) {
+            let eleValue = current.value
+            this.top = null
+            return (eleValue)
+        }
+        while (current.next !== null) {
+            previous = current
+            current = current.next
+        }
+        let eleValue = current.value
+        previous.next = null
+        return (eleValue)
     }
     peek() {
         if(this.top==null){
@@ -43,4 +53,4 @@ class Stack {
     
         
     }
-    
+   module.exports=Stack;
