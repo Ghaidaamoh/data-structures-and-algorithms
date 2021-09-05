@@ -1,5 +1,6 @@
 'use strict';
 
+const Node = require('./Node_trees')
 
 class BinaryTree {
     constructor(root) {
@@ -57,4 +58,36 @@ class BinaryTree {
 }
 
 
+/* ------------------------------------------------------------------
+           Testing Part of Challenge 16
+------------------------------------------------------------------ */
 
+
+let myRoot = new Node(10)
+let myTree = new BinaryTree(myRoot)
+
+myTree.add(5)
+myTree.add(2)
+myTree.add(20)
+myTree.add(15)
+
+
+
+let myRoot2 = new Node(50)
+let myTree2 = new BinaryTree(myRoot2)
+
+myTree2.add(50)
+myTree2.add(25)
+myTree2.add(70)
+myTree2.add(85)
+
+describe('Testing tree maximum Value Challenge 16 ', () => {
+    test('It should check the maximum value in the tree :', () => {
+
+        
+        expect(myTree.maximumValue()).toStrictEqual(20);
+        expect(myTree2.maximumValue()).toStrictEqual(85);
+
+
+    });
+});
