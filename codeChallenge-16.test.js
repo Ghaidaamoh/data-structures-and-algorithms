@@ -39,7 +39,7 @@ class BinaryTree {
 
     maximumValue() {
 
-        let result = root.value
+        let result = this.root.value
         let recursive = (node) => {
 
             if (node.value > result) {
