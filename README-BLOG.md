@@ -23,4 +23,4 @@ a function called 'InsertionSort' that takes an array as an argument and iterate
 ![insertion sort](assets/Class26.png)
 
 **-> Visual of given array**
-![Visual of given array](assets/codeChallenge260.png)
+![Visual of given array](assets/class260.png)
