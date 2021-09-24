@@ -1,12 +1,8 @@
-
 'use strict';
 class Node {
-    constructor(pref,name){
-this.pref=pref,
-this.name=name,
+    constructor(value){
+this.value=value,
 this.next=null
     }
 }
-
-
 module.exports=Node;
