@@ -4,5 +4,5 @@ To write a function that will determine if the given string is full of unique ch
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![image](assets/unique.png)
+![image](../assets/unique.png)
 
